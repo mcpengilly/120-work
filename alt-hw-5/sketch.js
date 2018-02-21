@@ -15,9 +15,11 @@ function draw() {
   push();
 
   //static circles
+
   push();
 
   //circle 1
+
   fill('rgba(255,0,0,.5)');
 
   ellipse(windowWidth * .3, 400, ellipseWidth, ellipseHeight);
@@ -25,6 +27,7 @@ function draw() {
 
   push();
   //circle 2
+
   fill('rgba(0,0,255,.5)');
 
   ellipse(windowWidth * .7, 400, ellipseWidth, ellipseHeight);
@@ -32,7 +35,9 @@ function draw() {
   pop();
 
   push();
+
   //moving circle
+  
   fill('rgba(255, 255, 0, .5)');
 
 
