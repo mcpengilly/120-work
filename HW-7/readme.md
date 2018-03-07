@@ -1,0 +1,13 @@
+Micah Pengilly, Section 50
+
+[Live Sketch Link](Your Live Link)
+
+
+# HW 7 | Describe then Alter the Bouncing Ball
+
+## Description of What the Original Code is Doing
+
+The document begins by creating an object, 'ball', and assigning it several properties.  Width controls the size of the ellipse, x and y control the x and y positions of the ellipse, delta_x and delta_y prevent the ball from leaving the canvas, and scale_x and scale_y allow the rate at which the ball's postion changes to be altered when the user presses the mouse.  Lines 21 and 22 makes the x and y properties change if the delta or scale properties are changed.  Lines 25-27 say that if the ball's x postion is greater than or equal to the canvas width, or the ball's x position is less than or equal to zero then the delta_x property is multiplied by -1.  This makes the ball change direction if it reaches the right or left edge of the canvas.  Lines 28-30 use the same process to force the ball to stay between the top and bottom of the canvas.  Lines 21 and 22 derive the values of x and y based on the values of delta_x and delta_y, so when one of the delta properties is invervsed, it also inverses the value of x or y respectively.  Lines 32-34 create a fill for the ellipse and create the ellipse using the x, y, and width properties.  Lines 36-39 creates a function in which the scale_x and scale_y values are changed when the mouse is pressed based on the postion of the cursor.  The scale properties are mapped so that their values range from .5 to 10 according to where the mouse is pressed on the canvas.  The value of .5 is mapped to the left edge and top of the canvas, and the value 10 is mapped to the far right and bottom of the canvas.  This affects the movement of the ball because in lines 21 and 22 the values of the properties x and y are derived from the values of scale_x and scale_y.
+## How did you alter the sketch?
+
+First I decided to make the ball randomly change color each time the mouse is pressed.  I created three properties for the ball variable: ball.r, ball.g, and ball.b each with an initial value of 255.  I then put these properties into the fill for the ellipse and finally added a random function for each of the properties in the existing mousePressed function.  Next I wanted the ball to grow while the mouse is pressed and shrink when it is released.  I created an if else statement that stated that when the mouse is being pressed, the ball.width property will increment up, and if it is not being pressed the ball.width property will increment down.  I also constrained the value of the ball.width property within the if else statement to be between 40 and 300.
