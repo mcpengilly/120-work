@@ -1,0 +1,9 @@
+# Homework 8
+## Summary
+For this week's assignment I didn't have a clear idea of what I wanted to do, so I experimented with for loops until I had a product that I was happy with.  I began by creating a grid of ellipses using nested for loops.  Then I experimented with color, movement, and how mouse events could influence the grid.  I was having trouble achieving the results that I desired with the movement and mouse events, so I decided to focus on color.  I began to think about how the ellipses could be colored individually even though the were procedurally generated.  I decided to create variables for the red and blue fill values and map those values to the x and y positions of the ellipses, so that the red value of each ellipse is based on its x position and the blue value is based on the y position.  I then decided to have a random green value in order to make the project more visually interesting.  I then created an offset variable that moved the ellipses down and to the right and created an if statement that reset the position of the ellipses when they had reached the position of the next ellipses in the sequence, creating the illusion that the ellipses were continuously moving across the window.
+
+## Issues
+When I experimented with mouse events I was hoping to use the mousePressed function to change the motion and the color of the ellipses.  I attempted to reverse the movement of the ellipses when the mouse was pressed, but I was unable to make this work as intended.  I also tried to make the colors reverse so that the blue value became dependent on the x position and the red value dependent on the y position, but I was also unable to figure this out.
+
+## Conclusions
+After this week's assignment I am interested in learning more about for loops and exploring their potential.  I can tell that they are extremely valuable and I feel like I have barely scratched the surface.
